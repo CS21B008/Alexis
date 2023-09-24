@@ -1,0 +1,30 @@
+.App-header {
+    background-color: #282c34;
+    width: 100vw;
+    height: 10vh;
+    min-height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(222, 228, 255);
+  }
+  
+.App-header button {
+    border: none;
+    color: rgb(222, 228, 255);
+    background: none;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.App-header button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.Logo-header {
+    font-size: 22px;
+    padding: 5px;
+}

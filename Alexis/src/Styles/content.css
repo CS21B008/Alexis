@@ -1,0 +1,9 @@
+.Content {
+    height: 90vh;
+    margin-top: 10vh;
+    background-image: url(../../public/Images/Home_background.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+  }
