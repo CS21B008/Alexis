@@ -1,14 +1,23 @@
 .App-header {
-    background-color: #282c34;
+    background-color: tr;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     min-height: 50px;
     position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: rgb(222, 228, 255);
-  }
+    padding-top: 2vh;
+}
+
+.nav-header {
+    display: flex;
+    width: 80vw;
+    padding-right: 40vw;
+    justify-content: space-around;
+    align-items: center;
+}
   
 .App-header button {
     border: none;
@@ -16,15 +25,24 @@
     background: none;
     font-size: 20px;
     padding: 7px;
+    border-radius: 8px;
 }
 
 .App-header button:hover {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: 0.2s ease-in-out;
 }
 
+.App-header button:active {
+    opacity: 0.7;
+    transition: 0.2 ease-in-out;
+}
+
 .Logo-header {
+    display: flex;
+    align-items: center;
+    width: 20vw;
     font-size: 22px;
     padding: 5px;
 }

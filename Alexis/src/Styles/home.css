@@ -2,6 +2,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-image: url(../../public/Images/Home_background.jpg);
+  background-size: cover;
 }
 
 .Intro-para {
