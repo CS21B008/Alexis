@@ -7,7 +7,7 @@ function Content({ navId }){
             <div className='Content'>
                 <div className='Intro-para'>
                     <p>
-                    About
+                    about
                     </p>
                 </div>
             </div>
@@ -17,7 +17,7 @@ function Content({ navId }){
             <div className='Content'>
                 <div className='Intro-para'>
                     <p>
-                    Contact
+                    contact
                     </p>
                 </div>
             </div>
@@ -27,7 +27,7 @@ function Content({ navId }){
             <div className='Content'>
                 <div className='Intro-para'>
                     <p>
-                    Login
+                    login
                     </p>
                 </div>
             </div>
@@ -37,7 +37,7 @@ function Content({ navId }){
             <div className='Content'>
                 <div className='Intro-para'>
                     <p>
-                    Home
+                    home
                     </p>
                 </div>
             </div>

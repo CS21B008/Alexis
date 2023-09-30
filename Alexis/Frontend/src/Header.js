@@ -6,27 +6,27 @@ function Header({ setNavId }){
         <div className='nav-header'>
           <div className="Home-header">
             <button onClick={() => setNavId(0)}>
-              <span>Home</span>
+              <span>HOME</span>
             </button>
           </div>
           <div className='About-header'>
             <button onClick={() => setNavId(1)}>
-              About
+              ABOUT
             </button>
           </div>
           <div className='Contact-header'>
             <button onClick={() => setNavId(2)}>
-              Contact
+              CONTACT
             </button>
           </div>
           <div className='Login-header'>
             <button onClick={() => setNavId(3)}>
-              Login/Signup
+              LOGIN/SIGNUP
             </button>
           </div>
         </div>
         <div className='Logo-header'>
-          <p className='Logo-para'>Alexis</p>
+          <p className='Logo-para'>ALEXIS</p>
         </div>
       </header>
     );

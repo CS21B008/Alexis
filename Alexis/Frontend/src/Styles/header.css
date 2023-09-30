@@ -7,23 +7,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: rgb(222, 228, 255);
+    color: rgb(255, 235, 222);
     padding-top: 2vh;
 }
 
 .nav-header {
     display: flex;
-    width: 80vw;
-    padding-right: 40vw;
+    width: 45vw;
+    padding-right: 45vw;
+    padding-left: 3vw;
     justify-content: space-around;
     align-items: center;
 }
   
 .App-header button {
     border: none;
-    color: rgb(222, 228, 255);
+    color: rgb(255, 235, 222);
     background: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 7px;
     border-radius: 8px;
 }
@@ -43,6 +44,6 @@
     display: flex;
     align-items: center;
     width: 20vw;
-    font-size: 22px;
+    font-size: 40px;
     padding: 5px;
 }
