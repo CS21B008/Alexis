@@ -1,10 +1,10 @@
-import './Styles/home.css';
+import '../Styles/home.css';
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 import { useState } from 'react';
 
-function App() {
+function Home() {
 
   const [navId,setNavId] = useState(0);
 
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

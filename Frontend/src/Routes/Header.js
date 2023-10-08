@@ -1,4 +1,4 @@
-import './Styles/header.css';
+import '../Styles/header.css';
 
 function Header({ setNavId }){
     return(

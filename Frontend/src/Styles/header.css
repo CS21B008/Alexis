@@ -7,15 +7,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 40px;
     color: rgb(255, 235, 222);
     padding-top: 2vh;
 }
 
 .nav-header {
     display: flex;
-    width: 45vw;
-    padding-right: 45vw;
-    padding-left: 3vw;
+    width: 60vw;
+    padding-right: 80vw;
+    padding-left: 10vw;
+    padding-top: 2vh;
+    font-size: 40px;
+    top: 30%;
     justify-content: space-around;
     align-items: center;
 }
@@ -24,8 +28,8 @@
     border: none;
     color: rgb(255, 235, 222);
     background: none;
-    font-size: 15px;
-    padding: 7px;
+    font-size: 20px;
+    padding: 15px;
     border-radius: 8px;
 }
 
@@ -43,7 +47,10 @@
 .Logo-header {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 85%; /* Center horizontally */
     width: 20vw;
-    font-size: 40px;
+    font-size: 45px;
     padding: 5px;
 }
