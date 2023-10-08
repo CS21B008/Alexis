@@ -1,4 +1,4 @@
-.App {
+.App, .About, .Contact  {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-.Intro-para {
+.contentPara {
   color: rgb(222, 228, 255);
   margin: 5vmin;
   font-size: 18px;

@@ -1,28 +1,21 @@
+import { Link } from 'react-router-dom';
 import '../Styles/header.css';
 
-function Header({ setNavId }){
+function Header(){
     return(
       <header className="App-header">
         <div className='nav-header'>
           <div className="Home-header">
-            <button onClick={() => setNavId(0)}>
-              <span>HOME</span>
-            </button>
+              <Link className="headerLink" to="/">HOME</Link>
           </div>
           <div className='About-header'>
-            <button onClick={() => setNavId(1)}>
-              ABOUT
-            </button>
+              <Link className="headerLink" to="/about">ABOUT</Link>
           </div>
           <div className='Contact-header'>
-            <button onClick={() => setNavId(2)}>
-              CONTACT
-            </button>
+              <Link className="headerLink" to="/contact">CONTACT</Link>
           </div>
           <div className='Login-header'>
-            <button onClick={() => setNavId(3)}>
-              LOGIN/SIGNUP
-            </button>
+              <Link className="headerLink" to="/login">LOGIN/SIGNUP</Link>
           </div>
         </div>
         <div className='Logo-header'>
