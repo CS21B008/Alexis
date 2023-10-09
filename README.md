@@ -27,7 +27,17 @@ To set up and run Alexis locally:
 5. Goto to the Backend directory and run `node index.js`
 6. Access the app in your web browser at `http://localhost:3000`.
 ## Usage
-
+When the user runs the web app, the home page loads first. Users can navigate to About, Contact, Login/Signup, and Simulate Pages using the navigation bar. There is also a footer to view the web's social accounts(social media accounts in future updates). 
+`Home Page`:
+![HomePage](ReadMe_resources/Home_Page.png)
+`About Page` describes the `Alexis` Web project.
+![AboutPage](ReadMe_resources/About_Page.png)
+`Login Page` 
+![LoginPage](ReadMe_resources/Login_Page.png)
+`Signup Page` 
+![SignupPage](ReadMe_resources/Signup_page.png)
+User input for simulation
+![SimulatePage](ReadMe_resources/Simulate_Page.png)
 ## Design Decisions
 
 ## Technologies Used
