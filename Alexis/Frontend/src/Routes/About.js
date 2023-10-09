@@ -29,7 +29,7 @@ function About() {
           <strong>A. Shree Balaji</strong><br/><br/>
           <strong>Contact Us</strong><br/><br/>
           We value your feedback and inquiries. Feel free to reach out to us through our <Link to="/contact" className='link'>Contact Page</Link> or send us an email at cs21b054@iittp.ac.in or cs21b008@iittp.ac.in . We're excited to hear from you!<br/><br/><br/>
-          <Link className='link'>DeepDive</Link>
+          <Link to='https://github.com/CS21B008/Alexis' target='/blank' className='link'>DeepDive</Link>
         </p>
       </div>
       <Footer/>

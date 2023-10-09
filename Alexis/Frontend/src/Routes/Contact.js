@@ -11,8 +11,7 @@ function Contact() {
       <div className='Content'>
         <pre className='contactPara'>
           <strong>Contact us for any query</strong><br/><br/>
-          <strong>Email ids: </strong>cs21b008@iittp.ac.in<br/>           cs21b054@iittp.ac.in<br/>
-          <strong>Phone no: </strong> +91 8075418926<br/>           +91 8074975868<br/><br/>
+          <strong>Email ids: </strong>cs21b008@iittp.ac.in<br/>           cs21b054@iittp.ac.in<br/><br/>
           <strong>Contribute to the project</strong><br/>
           <a href="https://github.com/CS21B008/Alexis" className='GitLink' target='/blank'>
             https://github.com/CS21B008/Alexis
