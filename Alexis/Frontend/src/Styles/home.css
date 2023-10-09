@@ -6,8 +6,10 @@
   background-size: cover;
 }
 
-.contentPara {
-  color: rgb(222, 228, 255);
-  margin: 5vmin;
-  font-size: 18px;
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar  {
+  display: none;
 }

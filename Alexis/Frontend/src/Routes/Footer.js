@@ -7,13 +7,13 @@ function Footer () {
         <div className='footer'>
             <p>Get in touch with us</p>
             <div className='footer-socialmedia'>
-                <a href='https://www.facebook.com/'>
+                <a href='https://www.facebook.com/' target='/blank'>
                     <BsFacebook />
                 </a>
-                <a href='https://www.instagram.com/'>
+                <a href='https://www.instagram.com/' target='/blank'>
                     <BsInstagram />
                 </a>
-                <a href='https://www.twitter.com/'>
+                <a href='https://www.twitter.com/' target='/blank'>
                     <FaXTwitter />
                 </a>
             </div>

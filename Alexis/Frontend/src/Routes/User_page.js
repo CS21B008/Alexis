@@ -3,6 +3,8 @@ import { useState} from 'react'
 import axios from 'axios'
 import { useNavigate} from 'react-router-dom'
 import '../Styles/User_page.css'
+import Header from './Header'
+
 function User_page() {
 
   const [Medicine_name, setMedicine_name] = useState('')
@@ -67,6 +69,8 @@ function User_page() {
 
  
 return (
+    <div>
+    <Header />
     <div className="box2">
     <div className="container">
         <div className="row">
@@ -102,8 +106,8 @@ return (
        </div>
      </div>
     </div>
-
     </div>
+  </div>
   );
 }
 

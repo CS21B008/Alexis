@@ -30,11 +30,17 @@
     top: 50%; /* Center vertically */
     left: 30%; /* Center horizontally */
     transform: translate(-50%, -50%);
+    min-width: 50px;
     width: 30%;
-    height:50%;
+    height:40%;
     color: white;
-    padding: 100px; /* Adjust as needed */
+   /* Adjust as needed */
     box-sizing: border-box; /* Include padding in the total width */
+  }
+
+  .position {
+    position: relative;
+    bottom: -10%;
   }
   
   /* Header styling */
@@ -46,6 +52,7 @@
   /* Input styling */
   .inputs {
     margin-top: 20px;
+    min-width: 170px;
   }
   
   .input {
