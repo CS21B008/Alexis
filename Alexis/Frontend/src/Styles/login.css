@@ -1,19 +1,4 @@
-/* .box{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../../public/Images/login_page.png);
-    background-size: cover;
-  }
- 
 
-  }
-  
-  .Intro {
-    color: rgb(222, 228, 255);
-    margin: 5vmin;
-    font-size: 18px;
-  } */
   .box {
     display: flex;
     height: 100vh; /* 100% of the viewport height */
@@ -30,29 +15,25 @@
     top: 50%; /* Center vertically */
     left: 30%; /* Center horizontally */
     transform: translate(-50%, -50%);
-    min-width: 50px;
     width: 30%;
-    height:40%;
+    height:50%;
     color: white;
-   /* Adjust as needed */
+    padding: 100px; /* Adjust as needed */
     box-sizing: border-box; /* Include padding in the total width */
-  }
-
-  .position {
-    position: relative;
-    bottom: -10%;
   }
   
   /* Header styling */
   .header {
     font-size: 24px;
     font-weight: bold;
+    position: absolute;
+    top: 15%; /* Center vertically */
+    left: 30%; 
   }
   
   /* Input styling */
   .inputs {
     margin-top: 20px;
-    min-width: 170px;
   }
   
   .input {
@@ -66,7 +47,13 @@
     box-sizing: border-box;
     margin-top: 5px;
   }
-  
+  .text-white
+  {
+    position: absolute;
+    top: 70%; /* Center vertically */
+    left: 20%; 
+    
+  }
   /* Button styling */
   .button input[type="submit"] {
     background-color: #007bff; /* Adjust the color as needed */
@@ -78,5 +65,5 @@
   }
   
   .button input[type="submit"]:hover {
-    background-color: #0056b3; /* Adjust the color as needed */
+    background-color: #0056b3; 
   }

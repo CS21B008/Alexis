@@ -16,7 +16,7 @@
 .second{
   /* flex: 1; Take up all available space */
   position: absolute;
-  top: 50%; /* Center vertically */
+  top: 30%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%);
   width: 30%;
@@ -26,12 +26,16 @@
   box-sizing: border-box; /* Include padding in the total width */
   text-align: center;
 }
-
+.text-white{
+  position: absolute;
+  top: 90%;
+  left: 44%;
+}
 .position {
   font-size: 3rem;
   color: #fff;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -61,5 +65,5 @@
 }
 
 .button1 input:hover {
-  background-color: #45a049;
+  background-color: #45a049;
 }

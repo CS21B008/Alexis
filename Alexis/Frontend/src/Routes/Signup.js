@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate, Link} from 'react-router-dom'
 import '../Styles/Signup.css'
 function Signup() {
   const [name, setName] = useState('')
@@ -82,10 +82,10 @@ function Signup() {
               </div>
             
               <div className='input1'>
-                <input type="Age" onChange={(e) => setAge(e.target.value)} placeholder='UserId' />
+                <input type="UserId" onChange={(e) => setUserId(e.target.value)} placeholder='UserId' />
               </div>
               <div className='input1'>
-              <input type="Gender" onChange={(e) => setAge(e.target.value)} placeholder='Gender' />
+              <input type="Gender" onChange={(e) => setGender(e.target.value)} placeholder='Gender' />
               </div>
               <div className='input1'>
                 <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder='Email ID' />
@@ -97,15 +97,17 @@ function Signup() {
                 <input type="address" onChange={(e) => setaddress(e.target.value)} placeholder='address' />
               </div>
               <div className='input1'>
-                <input type="UserId" onChange={(e) => setUserId(e.target.value)} placeholder='UserId' />
+                <input type="Age" onChange={(e) => setAge(e.target.value)} placeholder='age' />
               </div>
               <div className='button1'>
               <input type="submit" value="Sign Up" onClick={Signup} />
               </div>
         </div>
+        <p1 className="text-white">
+        Already have an account? <Link to='/login'>login</Link>
+        </p1>
         </div>
-        
-  )
+    )
 
 }
 

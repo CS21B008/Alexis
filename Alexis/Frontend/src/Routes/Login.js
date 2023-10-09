@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import '../Styles/login.css'
 function Login() {
   const [UserId, setUserId] = useState('')
@@ -44,29 +44,34 @@ function Login() {
       console.log(e)
     }
 }
-  return (
-    <div className='box'>
-      
-      
-        <div className='display'>
-          <div className="header">
-            <div className="position">Login</div>
-          </div>
-          <div className='inputs'>
-            <div className='input'>
-              <input type="UserId" onChange={(e)=>{setUserId(e.target.value)}} placeholder='UserId'/>
-            </div>
-            <div className='input'>
-              <input type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
-            </div>
-            <div className='button'>
-              <input type="submit" value="Login" onClick={login}/>
-            </div>
-         </div>
-        </div>
-      </div>
+return (
+  <div className='box'>
     
-  )
+    
+      <div className='display'>
+        <div className="header">
+          <div className="position">Login</div>
+        </div>
+        <form action="POST">
+        <div className='inputs'>
+          <div className='input'>
+            <input type="UserId" onChange={(e)=>{setUserId(e.target.value)}} placeholder='UserId'/>
+          </div>
+          <div className='input'>
+            <input type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
+          </div>
+          <div className='button'>
+            <input type="submit" value="Login" onClick={login}/>
+          </div>
+         
+       </div>
+       </form>
+      </div>
+      <p className="text-white">
+      Don't have an account? <Link to='/Signup'>Signup</Link>
+    </p>
+    </div>
+  )
 }
 
 export default Login
