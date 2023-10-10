@@ -39,7 +39,9 @@ When the user runs the web app, the home page loads first. Users can navigate to
 User input for simulation
 ![SimulatePage](ReadMe_resources/Simulate_Page.png)
 ## Design Decisions
-
++ Using Synthetic Data - As of now, there are APIs that can tell the side effects of medicine for typical humans, but not user-specific data. So, we choose to use synthetic data to provide user-specific output. The web app tries to provide infrastructure for when such data is available.
++ Using Axios library to communicate with the backend - Axios is used to communicate with the backend, and it also supports the Promise API that is native to JS ES6.What are the advantages of using Axios?
+Axios is a popular third-party library that simplifies the process of making HTTP requests in JavaScript. It provides an easy-to-use API with built-in features for handling request and response interceptors, data transformation, and error handling.
 ## Technologies Used
 - React, HTML, CSS for frontend
 - Node, Axios for backend
