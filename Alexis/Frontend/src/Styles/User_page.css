@@ -8,3 +8,9 @@ background-image: url(../../public/Images/user_page.jpeg);
 background-size: cover;
 background-position: center;
 }
+.headerfile{
+    position:absolute;
+    top:30%;
+    left:8%;
+    font-size:1.8rem;
+}

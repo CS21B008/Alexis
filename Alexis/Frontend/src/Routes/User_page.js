@@ -3,8 +3,6 @@ import { useState} from 'react'
 import axios from 'axios'
 import { useNavigate} from 'react-router-dom'
 import '../Styles/User_page.css'
-import Header from './Header'
-
 function User_page() {
 
   const [Medicine_name, setMedicine_name] = useState('')
@@ -69,24 +67,24 @@ function User_page() {
 
  
 return (
-    <div>
-    <Header />
     <div className="box2">
+     <div className="headerfile fw-bold mt-4 text-white">Enter Medicine component and dosage in mg</div>
     <div className="container">
         <div className="row">
         <div className="col-sm-12">
-         <h5 className="mt-3 mb-4 fw-bold text-white">Enter Medicine component and dosage in mg</h5>
+       
             
             { 
+        
             inputList.map( (x,i)=>{
               return(
               <div className="row mb-3">
                  <div class="form-group col-md-4">
-                 <label className="text-white" >Component Name</label>
+                
                   <input type="text"   name="firstName" class="form-control"  placeholder="Enter Component" onChange={ e=>handleinputchange(e,i)} />
                </div>
                <div class="form-group col-md-4">
-               <label className="text-white" >Amount (in mg)</label>
+               
                   <input type="text"  name="lastName" class="form-control"   placeholder="Enter amount" onChange={ e=>handleinputchange(e,i) }/>
                </div>
                <div class="form-group col-md-2 mt-4">
@@ -106,15 +104,13 @@ return (
        </div>
      </div>
     </div>
+
     </div>
-  </div>
   );
 }
 
 
 
 export default User_page
-
-
 
 

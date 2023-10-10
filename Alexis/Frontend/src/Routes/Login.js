@@ -29,7 +29,7 @@ function Login() {
         'Content-Type': 'application/json',
       },
     };
-
+    navigate('/User_page');
     try{
       const { data }=await axios.post(
         'http://localhost:3000/api/user/login',loginData,config)

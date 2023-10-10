@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate, Link} from 'react-router-dom'
+import { useNavigate,Link} from 'react-router-dom'
 import '../Styles/Signup.css'
 function Signup() {
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [Age, setAge] = useState('')
@@ -16,56 +17,57 @@ function Signup() {
  
 
 
-  async function Signup(e){
-    if (!name||!email||!password||!address||!UserId||!Age||!Gender) {
-          alert("Please Fill All The Details")
+const handleSignup=async (event)=>{
+
+  event.preventDefault()
+
+    if (!name.trim()||!email.trim()||!password.trim()||!address.trim()||!UserId.trim()||!Age.trim()||!Gender.trim()) 
+     {   
+        alert("Please Fill All The Details")
           return;
-        }
+      }
 
-
-    e.preventDefault()
-    const SignupData = {
-      name,
-      email,
-      password,
-      address,
-      UserId,Age,
-      Gender
       
-      
-    }
-   
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
+        
+      navigate('/login');
 
     try{
+     
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+  const SignupData = {
+    name,
+    email,
+    password,
+    address,
+    UserId,Age,
+    Gender
+  };
       const { data }=await axios.post(
-        'http://localhost:3000/api/user/Signup',SignupData,config)
-        .catch((error)=>{
-          console.log(error);
-        });
+        'http://localhost:5000/api/user/Signup ',SignupData,config);
+        if (data.status === 200) {
+        
+        localStorage.setItem('userinfo',JSON.stringify(data));
+        alert("work");
         console.log(data);
-        localStorage.setItem('userInfo',JSON.stringify(data));
+       
         navigate('/');
+        }
+        else{
+          console.log('Unexpected status code:', data.status);
+          alert('Failed to sign up. Please try again.');
+        }
     }
-    catch(e){
-      console.log(e)
-    }
-}
-
-  // const handleSignUp = async ()=> {
-  
+    catch(error){
+      console.log(error)
     
-  //   if (!name||!email||!password||!address||!UserId) {
-  //     alert("Please Fill All The Details");
-  //     return;
-  //   }
-  
+    
+    }
+ }
 
-  // }
  
   return (
     <div className='box1'>
@@ -100,12 +102,12 @@ function Signup() {
                 <input type="Age" onChange={(e) => setAge(e.target.value)} placeholder='age' />
               </div>
               <div className='button1'>
-              <input type="submit" value="Sign Up" onClick={Signup} />
+              <input type="submit" value="Sign Up" onClick={handleSignup} />
               </div>
         </div>
-        <p1 className="text-white">
+        <div className="text-white custom_class">
         Already have an account? <Link to='/login'>login</Link>
-        </p1>
+        </div>
         </div>
     )
 

@@ -16,7 +16,7 @@
 .second{
   /* flex: 1; Take up all available space */
   position: absolute;
-  top: 30%; /* Center vertically */
+  top: 40%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%);
   width: 30%;
@@ -26,16 +26,16 @@
   box-sizing: border-box; /* Include padding in the total width */
   text-align: center;
 }
-.text-white{
+.custom_class{
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 44%;
 }
 .position {
   font-size: 3rem;
   color: #fff;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
