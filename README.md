@@ -37,7 +37,7 @@ When the user runs the web app, the home page loads first. Users can navigate to
 `Signup Page` 
 ![SignupPage](ReadMe_resources/Signup_page.png)
 User input for simulation
-![SimulatePage](ReadMe_resources/Simulate_Page.png)
+![SimulatePage](ReadMe_resources/Simulate_Page.jpeg)
 ## Design Decisions
 + Using Synthetic Data - As of now, there are APIs that can tell the side effects of medicine for typical humans, but not user-specific data. So, we choose to use synthetic data to provide user-specific output. The web app tries to provide infrastructure for when such data is available.
 + Using Axios library to communicate with the backend - Axios is used to communicate with the backend, and it also supports the Promise API that is native to JS ES6.What are the advantages of using Axios?
