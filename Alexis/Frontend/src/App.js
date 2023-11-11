@@ -6,6 +6,7 @@ import Login from './Routes/Login';
 import User_page from './Routes/User_page';      
 import About from './Routes/About';
 import Contact from './Routes/Contact';
+import Models from './Routes/models';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/User_page" element={<User_page />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/simulate" element={<User_page />} />
+            <Route path="/models" element={<Models />} />
           </Routes>
         
         </Router>

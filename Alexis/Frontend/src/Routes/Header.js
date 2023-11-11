@@ -34,6 +34,9 @@ function Header(){
           <div>
             <Link className="headerLink" to="/simulate">SIMULATE</Link>
           </div>
+          <div>
+            <Link className="headerLink" to="/models">MODELS</Link>
+          </div>
         </div>
         <div className='Logo-header'>
           <p className='Logo-para'>ALEXIS</p>
