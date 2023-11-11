@@ -17,7 +17,7 @@ export function Intestines(props) {
     <OrbitControls />
     <hemisphereLight intensity={0.75} />
     <pointLight intensity={1} position={[2, -2, 1]} />
-    <group {...props} dispose={null} scale={3} position={[-2,-1,0]}>
+    <group {...props} dispose={null} scale={3} position={[-2,-0.5,0]}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.037}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[15.286, 3.827, -1.997]} scale={0.1}>

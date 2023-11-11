@@ -16,7 +16,7 @@ export function Kidneys(props) {
     <>
     <OrbitControls />
     <hemisphereLight intensity={1} position={[0,0,0]}/>
-    <group {...props} dispose={null} scale={2.75} position={[0,-1,0]}>
+    <group {...props} dispose={null} scale={2.75} position={[0,-0.5,0]}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.363}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <mesh geometry={nodes.kidney02kidney03Group12708_Kidney_Tex_0.geometry} material={materials.Kidney_Tex} position={[126.797, -12.19, 3.735]} scale={98.682} />

@@ -16,7 +16,7 @@ export function Lungs(props) {
     <>
     <OrbitControls/>
     <hemisphereLight intensity={1} />
-    <group {...props} dispose={null} scale={0.2} position={[0,-3,0]}>
+    <group {...props} dispose={null} scale={0.16} position={[0,-1.5,0]}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.85}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.1}>
           <mesh geometry={nodes.thairoid01low_part01_Group6344Group18522_thairoid01lungh_part01_0.geometry} material={materials.thairoid01lungh_part01} scale={17.228} />

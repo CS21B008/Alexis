@@ -16,7 +16,7 @@ export function Brain(props) {
     <>
     <OrbitControls />
     <hemisphereLight intensity={1} />
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0,0.5,0]}>
       <mesh geometry={nodes.Icosphere__0.geometry} material={materials['Scene_-_Root']} position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={1.25} />
     </group>
     </>

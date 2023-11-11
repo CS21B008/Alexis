@@ -16,7 +16,7 @@ export function Stomach(props) {
     <>
     <OrbitControls />
     <hemisphereLight intensity={1} />
-    <group {...props} dispose={null} scale={0.55}>
+    <group {...props} dispose={null} scale={0.45} position={[0,1,0]}>
       <group position={[-0.046, 3.375, 0]} scale={[0.4, 1, 0.405]}>
         <mesh geometry={nodes.Object_4.geometry} material={materials['Material.001']} />
         <mesh geometry={nodes.Object_5.geometry} material={materials['Material.001']} />

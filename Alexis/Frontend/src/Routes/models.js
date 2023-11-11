@@ -11,8 +11,8 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 
 function clickHandler(){
-    const Hamburger = document.querySelector('.Hamburger');
-    const nav = document.querySelector('.nav-header');
+    const Hamburger = document.querySelector('.HamburgerM');
+    const nav = document.querySelector('.nav-headerM');
     Hamburger.classList.toggle('active');
     nav.classList.toggle('active');
   }
@@ -50,6 +50,7 @@ function Model( { modelName , color } ){
 function Models(){
     const models = ["Brain" , "Lungs" , "Heart" , "Stomach" , "Intestines" , "Kidneys"];
     const [modelNo , setModelNo] = useState(0);
+    let message = "";
 
     const nextModelNo = () => {
         if(modelNo === models.length - 1){
@@ -77,49 +78,61 @@ function Models(){
         //return "red";
         //return "orange";
         //return "grey";
-        if(modelName === "Brain"){
-            return "red";
-        }else if(modelName === "Lungs"){
-            return "orange";
-        }else if(modelName === "Heart"){
-            return "grey";
-        }else if(modelName === "Stomach"){
-            return "green";
-        }else if(modelName === "Intestines"){
-            return "red";
-        }else if(modelName === "Kidneys"){
-            return "orange";
-        }
+        // if(modelName === "Brain"){
+        //     message = "This organ is not safe"; //message related to color red
+        //     return "red";
+        // }else if(modelName === "Lungs"){
+        //     message = "This organ is partially unsafe";
+        //     return "orange";
+        // }else if(modelName === "Heart"){
+        //     message = "This organ is uneffected";
+        //     return "grey";
+        // }else if(modelName === "Stomach"){
+        //     message = "This organ is safe";
+        //     return "green";
+        // }else if(modelName === "Intestines"){
+        //     message = "This organ is not safe";
+        //     return "red";
+        // }else if(modelName === "Kidneys"){
+        //     message = "This organ is partially unsafe";
+        //     return "orange";
+        // }
+        // else {
+        //     message = "Enter medicince data to get simulation results";
+        //     return "default";
+        // }
+        message = "Enter medicince data to get simulation results";
+        return "default";
     }
 
     return(
         <>
-        <header className="App-header">
-        <div className='Hamburger' onClick={() => {
+        <header className="App-headerM">
+        <div className='HamburgerM' onClick={() => {
           clickHandler();
         }}>
-          <span className='bar'></span>
-          <span className='bar'></span>
-          <span className='bar'></span>
+          <span className='barM'></span>
+          <span className='barM'></span>
+          <span className='barM'></span>
         </div>
-        <div className='nav-header'>
-          <div className="Home-header">
-              <Link className="headerLink" to="/">HOME</Link>
-          </div>
-          <div className='About-header'>
-              <Link className="headerLink" to="/about">ABOUT</Link>
-          </div>
-          <div className='Contact-header'>
-              <Link className="headerLink" to="/contact">CONTACT</Link>
-          </div>
-          <div className='Login-header'>
-              <Link className="headerLink" to="/login">LOGIN/SIGNUP</Link>
+        <div className='nav-headerM'>
+          <div>
+              <Link className="headerLinkM" to="/">HOME</Link>
           </div>
           <div>
-            <Link className="headerLink" to="/simulate">SIMULATE</Link>
+              <Link className="headerLinkM" to="/about">ABOUT</Link>
           </div>
           <div>
-            <Link className="headerLink" to="/models">MODELS</Link>
+              <Link className="headerLinkM" to="/contact">CONTACT</Link>
+          </div>
+          <div>
+              <Link className="headerLinkM" to="/login">LOGIN/SIGNUP</Link>
+          </div>
+          <div>
+            <Link className="headerLinkM" to="/simulate">SIMULATE</Link>
+          </div>
+          <div>
+            <Link className="headerLinkM" to="/models">MODELS</Link>
           </div>
         </div>
       </header>
@@ -128,6 +141,7 @@ function Models(){
         </div>
         <button className="Previous" onClick={prevModelNo}><p className="btn-text">&#8249;</p></button>
         <button className="Next" onClick={nextModelNo}><p className="btn-text">&#8250;</p></button>
+        <p className="message">{message}</p>
         </>
     );
 }

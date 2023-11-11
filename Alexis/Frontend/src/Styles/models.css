@@ -5,7 +5,7 @@
 }
 
 .btn-text {
-    font-size: 3rem;
+    font-size: 3vw;
     color: rgb(161, 166, 196);
 }
 
@@ -26,6 +26,7 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     padding: 0px;
+    z-index: 10;
 }
 
 .Next {
@@ -45,9 +46,10 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     padding: 0px;
+    z-index: 10;
 }
 
-.App-header {
+.App-headerM {
     background-color: transparent;
     width: 100vw;
     height: 8vh;
@@ -62,7 +64,7 @@
     z-index: 10;
 }
 
-.nav-header {
+.nav-headerM {
     display: flex;
     position: relative;
     left: 0%;
@@ -74,30 +76,18 @@
     backdrop-filter: blur(5px);
 }
 
-.headerLink:hover {
+.headerLinkM:hover {
     cursor: pointer;
     opacity: 0.9;
     transition: 0.2s ease-in-out;
 }
 
-.headerLink:active {
+.headerLinkM:active {
     opacity: 0.7;
     transition: 0.2 ease-in-out;
 }
 
-.Logo-header {
-    position: relative;
-    right: 15px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 45%; 
-    width: 20vw;
-    font-size: 45px;
-    padding: 5px;
-}
-
-.headerLink {
+.headerLinkM {
     border: none;
     text-decoration: none;
     color: rgb(41, 52, 81);
@@ -107,8 +97,22 @@
     border-radius: 8px;
 }
 
+.message {
+    position: absolute;
+    top: 87.5%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 3vw;
+    color: rgb(41, 52, 81);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.Hamburger {
+}
+
+.HamburgerM {
     display: none;
     position: relative;
     cursor: pointer;
@@ -116,7 +120,7 @@
     left: 0%;
 }
 
-.bar {
+.barM {
     display: block;
     width: 25px;
     height: 3px;
@@ -128,13 +132,13 @@
 }
 
 @media screen and (max-width: 2000px) {
-    .Hamburger {
+    .HamburgerM {
         justify-content: flex-start;
         padding-left: 4vw;
         display: block;
         backdrop-filter: blur(5px);
     }
-    .nav-header{
+    .nav-headerM{
         position: fixed;
         display: none;
         top: 10vh;
@@ -144,39 +148,27 @@
         justify-content: flex-start;
         transition: 0.3s;   
     }
-    .Logo-header {
-        justify-content: flex-end;
-        backdrop-filter: blur(5px);
-    }
-
-    .Hamburger.active .bar:nth-child(1) {
+    .HamburgerM.active .barM:nth-child(1) {
         -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
         transform: rotate(-45deg)  translate(-5px, 5px);
     }
-    .Hamburger.active .bar:nth-child(2) {
+    .HamburgerM.active .barM:nth-child(2) {
         opacity: 0;
     }
-    .Hamburger.active .bar:nth-child(3) {
+    .HamburgerM.active .barM:nth-child(3) {
         -webkit-transform: rotate(45deg) translate(-5px, -5px) ;
         transform: rotate(45deg) translate(-5px, -5px) ;
     }
-    .nav-header.active {
+    .nav-headerM.active {
         display: flex;
-    }
-    .Logo-header {
-        font-size: 30px;
-        width: fit-content;
-        transition: all 0.3s ease-in-out;
-    }
-    .Logo-para {
-        margin: 0%;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .Logo-header {
-        font-size: 20px;
-        width: fit-content;
-        top : 20px;
+@media screen and (max-width: 1000px) {
+    .message {
+        font-size: 5vw;
+    }
+    .btn-text {
+        font-size: 5vw;
     }
 }
