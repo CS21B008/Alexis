@@ -16,7 +16,8 @@ export function Heart(props) {
     <>
     <OrbitControls />
     <hemisphereLight intensity={1} />
-    <group {...props} dispose={null} scale={2.5}>
+    <pointLight position={[2, -2, 1]} />
+    <group {...props} dispose={null} scale={2.75}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.174}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <mesh geometry={nodes.hartZBrush_defualt_group_Heart_Tex_0.geometry} material={materials.Heart_Tex} scale={286.365} />
