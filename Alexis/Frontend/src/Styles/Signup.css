@@ -5,8 +5,9 @@
 .box1{
   display: flex;
   height: 100vh; /* 100% of the viewport height */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally*/
+  align-items: center; /*Center vertically */ 
+
   background-image: url(../../public/Images/Signup_page.jpeg); 
   background-size: cover;
   background-position: center;
@@ -28,7 +29,7 @@
 }
 .custom_class{
   position: absolute;
-  top: 80%;
+  top: 83%;
   left: 44%;
 }
 .position {
@@ -53,17 +54,20 @@
   outline: none;
 }
 
-.button1 input {
-  width: 100%;
+.button1 button {
+  position: absolute;
+  top: 77%;
+  left: 47%;
+  width: 6%;
   padding: 10px;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
-  background-color: #4caf50;
-  color: #fff;
+  background-color:#27c12e ;
+  color: white;
   cursor: pointer;
-}
+} 
 
-.button1 input:hover {
-  background-color: #45a049;
+.button1:hover {
+  background-color: #27c12e;
 }

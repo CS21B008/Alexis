@@ -47,7 +47,26 @@
     box-sizing: border-box;
     margin-top: 5px;
   }
-  .text-white
+  .info
+  {
+    font-size: 19px;
+    position: absolute;
+    top: 30%; /* Center vertically */
+    left: 10%; 
+
+  }
+  .button3 input[type="submit"] {
+    background-color: #007bff; /* Adjust the color as needed */
+    color: white;
+    position: absolute;
+    top: 40%; /* Center vertically */
+    left: 20%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  .login_pa
   {
     position: absolute;
     top: 70%; /* Center vertically */

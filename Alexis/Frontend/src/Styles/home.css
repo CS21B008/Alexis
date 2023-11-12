@@ -1,4 +1,4 @@
-.App, .About, .Contact, .models  {
+.App, .About, .Contact  {
   text-align: center;
   display: flex;
   flex-direction: column;
