@@ -25,7 +25,7 @@ function PatientData() {
       return;
     }
     
-   
+    const api = process.env.alexis-api || 'http://localhost:5000/api';
     try {
       console.log("reached here2");
       // const config = {
@@ -42,7 +42,7 @@ function PatientData() {
         occupation,
         receivedData
       };
-   const { data: { indices } } = await axios.post('http://localhost:5000/api/data/patient/', patientData)
+   const { data: { indices } } = await axios.post('${api}/data/patient/', patientData)
       .catch((error) => {
         console.log(error);
         // Handle the error

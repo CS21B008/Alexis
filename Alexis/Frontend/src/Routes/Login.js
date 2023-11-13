@@ -32,9 +32,10 @@ function Login() {
       },
     };
     // navigate('/User_page');
+    const api = process.env.alexis-api || 'http://localhost:5000/api';
     try{
       const { data }=await axios.post(
-        'http://localhost:5000/api/user/login',loginData,config)
+        '${api}/user/login',loginData,config)
         .catch((error)=>{
           console.log(error);
           alert("invalid credentials")

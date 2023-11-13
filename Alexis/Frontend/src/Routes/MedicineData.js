@@ -36,7 +36,8 @@ const MedicineData = () => {
       };
 
       // Make a POST request to the backend
-      const { data } = await axios.post('http://localhost:5000/api/MedicineData/mediinfo', formData);
+      const api = process.env.alexis-api || 'http://localhost:5000/api';
+      const { data } = await axios.post('${api}/MedicineData/mediinfo', formData);
 
       // Handle the response as needed
       console.log('Data successfully submitted:', data);
