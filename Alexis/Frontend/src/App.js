@@ -12,7 +12,7 @@ import PatientData from './Routes/patientData';
 import { AuthProvider } from './Routes/Authcontext'; 
 import PermissableLevels from './Routes/PermissableLevels';
 import MedicineData from './Routes/MedicineData';
-import Models from './Routes/Models';
+import Models from './Routes/models';
 
 function App() {
  
