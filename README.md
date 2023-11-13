@@ -1,5 +1,5 @@
 # Alexis: Visualizing Medical Simulations
-Alexis is a web project that focuses on visualizing medical simulations tailored to individual user body types. This platform is designed to ease medical education and training by providing an immersive and interactive learning experience. Link to the deployed server is [https://alexis-kjwi.onrender.com/](Here)
+Alexis is a web project that focuses on visualizing medical simulations tailored to individual user body types. This platform is designed to ease medical education and training by providing an immersive and interactive learning experience. The link to the deployed server is [Here](https://alexis-kjwi.onrender.com/)
 ## Table of Contents
 - [Problem Statement](#problem-statement)
 - [Features](#features)
