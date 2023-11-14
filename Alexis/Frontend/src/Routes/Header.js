@@ -13,6 +13,7 @@ function Header(){
   const { isLoggedIn } = useAuth(); 
   const {isMedicalProfessional}=useAuth(); 
   console.log(isLoggedIn);
+  console.log(isMedicalProfessional);
     return(
       <header className="App-header">
         <div className='Hamburger' onClick={() => {
