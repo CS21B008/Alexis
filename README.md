@@ -4,6 +4,7 @@ Alexis is a web project that focuses on visualizing medical simulations tailored
 - [Problem Statement](#problem-statement)
 - [Features](#features)
 - [Installation](#installation)
+- [Video Guide](#video-guide)
 - [Usage](#usage)
 - [Design Decisions](#design-decisions)
 - [Technologies Used](#technologies-used)
@@ -26,6 +27,8 @@ To set up and run Alexis locally:
 4. Goto to the Frontend directory and run `npm start`
 5. Goto to the Backend directory and run `node index.js`
 6. Access the app in your web browser at `http://localhost:3000`.
+## Video Guide
+  Link - https://drive.google.com/drive/folders/1_B4U3emxokFzPtEoVjDAZc3DNh7qeEn_
 ## Usage
 When the user runs the web app, the home page loads first. Users can navigate to About, Contact, Login/Signup, and Simulate Pages using the navigation bar. There is also a footer to view the web's social accounts(social media accounts in future updates). 
 `Home Page`:
