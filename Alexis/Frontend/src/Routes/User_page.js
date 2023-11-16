@@ -59,11 +59,10 @@ function User_page() {
       })),
     };
     console.log(pageData);
-    const api = process.env.alexis_api || 'http://localhost:5000/api';
     try {
-      const { data } = await axios.post(`${api}/data/user/`, pageData);
+      const { data } = await axios.post('http://localhost:5000/api/data/user/', pageData);
       console.log(data);
-      const dataToSend = {pageData };
+      const dataToSend = {pageData};
       navigate('/patientData', { state: { data: dataToSend } });
       // navigate('/patientData');
     } catch (error) {
@@ -74,7 +73,7 @@ function User_page() {
 
   return (
     <div className="box2">
-      <div className="headerfile fw-bold mt-4 text-white">Enter Medicine component and dosage in mg</div>
+      <div className="headerfile fw-bold mt-4 text-white">Enter Medicine and dosage in mg</div>
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -86,7 +85,7 @@ function User_page() {
                 return (
                   <div className="row mb-3">
                     <div className="form-group col-md-4">
-                      <input type="text" name="componentName" className="form-control" placeholder="Enter Component" onChange={e => handleinputchange(e, i)} />
+                      <input type="text" name="componentName" className="form-control" placeholder="Enter Medicine" onChange={e => handleinputchange(e, i)} />
                     </div>
                     <div className="form-group col-md-4">
 

@@ -31,9 +31,10 @@ const postPatient=asyncHandler(async(req,res)=>{
         res.status(400);
         throw new Error("Please fill in all required fields");
     }
+   
     try {
-        console.log()
-       console.log(Age)
+        
+       
         const NP = {
             
            
@@ -55,13 +56,11 @@ const postPatient=asyncHandler(async(req,res)=>{
         const organs = ["brain", "heart", "lungs","intestines","kidneys","stomach"];
         const indices=[-1,-1,-1,-1,-1,-1];
         const quality=["Good","Mild","Moderate","Severe"];
-        let maxIndex = 0;
+        
 
     var ind=0;
     var hiInd=0;
-    // <p>Age-group 1:1-10</p>
-    //       <p>Age-group 2:11-28</p>
-    //       <p>Age-group 3:28-60</p>
+ 
     if(Age>=1 && Age<=10)
     {
         ind=0;
@@ -73,23 +72,32 @@ const postPatient=asyncHandler(async(req,res)=>{
     else{
         ind=2;
     }
+    
     for (const organName of organs) {
-        let maxIndex = 0;
-      for(medicine in receivedData)
+        var finalresult=-1;
+        
+      for(const medicine of receivedData)
       {
+        let maxIndex = 5;
+
+      
       const permitData = await permitDataModel.findOne({ medicineName:medicine.componentName , organName:organName});
+      
+        
       if(permitData)
       {
-      for (let i = 4; i >-1; i--) {
-        var res=(medicine.amountInMg)/BMI;
-        if(permitData[ind][quality[i]]<res)
+      for (let i = 0; i <4; i++) {
+        var result=(medicine.amountInMg)/BMI;
+       
+        if(permitData.limits[ind][quality[i]]>result*10)
         {
-            maxIndex = Math.max(maxIndex, i);
+            maxIndex = Math.min(maxIndex, i);
         }
       }
     }
-      }
-      indices[hiInd]=maxIndex;
+    
+     finalresult=Math.max(maxIndex,finalresult)}
+      indices[hiInd]=finalresult;
       hiInd=hiInd+1;
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
 import '../Styles/login.css'
@@ -32,10 +32,9 @@ function Login() {
       },
     };
     // navigate('/User_page');
-    const api = process.env.alexis_api || 'http://localhost:5000/api';
     try{
       const { data }=await axios.post(
-        `${api}/user/login`,loginData,config)
+        'http://localhost:5000/api/user/login',loginData,config)
         .catch((error)=>{
           console.log(error);
           alert("invalid credentials")

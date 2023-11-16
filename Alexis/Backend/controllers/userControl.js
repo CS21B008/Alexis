@@ -1,7 +1,6 @@
 const asyncHandler = require('express-async-handler');
 const User = require('../models/userModel');
 const generateToken = require('../config/generateToken');
-console.log("it fails in control1")
 const registerUser = asyncHandler(async (req, res) => {
     const { name, email, password, address, UserId, Age, Gender,IsMedical_professional } = req.body;
     if (!name || !email || !password || !address || !UserId || !Age || !Gender ||!IsMedical_professional) {
@@ -46,7 +45,7 @@ const registerUser = asyncHandler(async (req, res) => {
             message: "trash"
             
         });
-        alert("it fails in control")
+       
     }
 });
 

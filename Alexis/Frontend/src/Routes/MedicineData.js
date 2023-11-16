@@ -20,7 +20,7 @@ const MedicineData = () => {
   };
 
   const handleFormSubmit = async () => {
-    if (!medicineName.trim() || numComponents < 0||(numComponents!==0 && numComponents!==componentsData.length)) {
+    if (!medicineName.trim() || numComponents < 0||(numComponents!=0 && numComponents!==componentsData.length)) {
       alert('Please fill in all the details');
       return;
     }
@@ -36,8 +36,7 @@ const MedicineData = () => {
       };
 
       // Make a POST request to the backend
-      const api = process.env.alexis_api || 'http://localhost:5000/api';
-      const { data } = await axios.post(`${api}/MedicineData/mediinfo`, formData);
+      const { data } = await axios.post('http://localhost:5000/api/MedicineData/mediinfo', formData);
 
       // Handle the response as needed
       console.log('Data successfully submitted:', data);

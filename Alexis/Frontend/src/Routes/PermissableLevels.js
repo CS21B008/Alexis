@@ -25,7 +25,7 @@ function PermissableLevels() {
       alert('Please fill in all the details');
       return;
     }
-    const api = process.env.alexis_api || 'http://localhost:5000/api';
+
     try {
       const formData = {
         medicineName,
@@ -39,7 +39,7 @@ function PermissableLevels() {
         // })),
       };
 
-      const { data } = await axios.post(`${api}/MedicineData/permit`, formData);
+      const { data } = await axios.post('http://localhost:5000/api/MedicineData/permit', formData);
       
       localStorage.setItem('userinfo', JSON.stringify(data));
       navigate('/EditDB');

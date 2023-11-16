@@ -20,6 +20,6 @@ const userSchema = mongoose.Schema({
 userSchema.methods.matchPassword = async function (enteredPassword) {
     return enteredPassword === this.password;
 }
-console.log("it is in usermodel")
+
 const User = mongoose.model("User", userSchema);
 module.exports = User;
