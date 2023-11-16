@@ -41,8 +41,8 @@ function Signup() {
         Gender,
         IsMedical_professional
       };
-      const api = process.env.alexis-api || 'http://localhost:5000/api';
-      const { data } = await axios.post('${api}/user/signUp', SignupData,
+      const api = process.env.alexis_api || 'http://localhost:5000/api';
+      const { data } = await axios.post(`${api}/user/signUp`, SignupData,
         config).catch((error) => {
           console.log(error);
           

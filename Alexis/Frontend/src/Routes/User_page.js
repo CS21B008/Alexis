@@ -59,9 +59,9 @@ function User_page() {
       })),
     };
     console.log(pageData);
-    const api = process.env.alexis-api || 'http://localhost:5000/api';
+    const api = process.env.alexis_api || 'http://localhost:5000/api';
     try {
-      const { data } = await axios.post('${api}/data/user/', pageData);
+      const { data } = await axios.post(`${api}/data/user/`, pageData);
       console.log(data);
       const dataToSend = {pageData };
       navigate('/patientData', { state: { data: dataToSend } });
